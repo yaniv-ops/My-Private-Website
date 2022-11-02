@@ -1,0 +1,7 @@
+.git/
+virt/
+base_django_project/node_modules/
+base_django_project/package-lock.json
+base_django_project/css/
+
+
