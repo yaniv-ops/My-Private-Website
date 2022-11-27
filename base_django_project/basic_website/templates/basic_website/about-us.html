@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block lang %} 
+    <html dir="rtl">
+{%  endblock %}
+
+{% block title %}
+    מעט עלינו ועל העסקים  &mdash; BluNinja
+{% endblock %}
+
+{% block style%} 
+<link href="https://fonts.googlepis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+rel="stylesheet">
+<link rel="stylesheet" href="{% static 'basic_website/styles/about-us.css' %}">
+<link rel="stylesheet" href="{% static 'basic_website/plugins/bulma/bulma.min.css' %}">
+<!-- slick slider -->
+<link rel="stylesheet" href="{% static 'basic_website/plugins/slick/slick.css' %}">
+<link rel="stylesheet" href=" ">
+<!-- themefy-icon -->
+<link rel="stylesheet" href="{% static 'basic_website/plugins/themify-icons/themify-icons.css' %}">
+
+<!-- Main Stylesheet -->
+
+<!--Favicon-->
+<link rel="shortcut icon" href="{% static 'basic_website/img/ninji.jpg'%}" type="image/x-icon">
+<link rel="icon" href="{% static 'basic_website/img/ninji.jpg'%}" type="image/x-icon">
+{% endblock %}
+
+{% block content %}
+<!-- /page title -->
+<section class="page-title-alt has-background-primary is-relative">
+    <div class="container">
+      <h1 class="has-text-white font-tertiary">מעט עליי ועל החברה</h1>
+    </div>
+    <!-- background shapes -->
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-bg-top.png' %}" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="{% static 'basic_website/img/about-us/illustrations/dots-group-sm.png' %}" alt="illustrations" class="bg-shape-2">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-yellow.png' %}" alt="illustrations" class="bg-shape-3">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-orange.png' %}" alt="illustrations" class="bg-shape-4">
+    <img src="{% static 'basic_website/img/about-us/illustrations/dots-group-cyan.png' %}" alt="illustrations" class="bg-shape-5">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-cyan-lg.png' %}" alt="illustrations" class="bg-shape-6">
+  </section>
+  <!-- /page title -->
+
+
+            <!-- about -->
+            <section class="section">
+              <div class="container">
+                <div class="columns">
+                  <div class="column is-8-tablet">
+                    <p>שמי יניב ואני מתמחה בבניית אתרים לעסקים, עם ניסיון של 10 שנים בתחום כשכיר בחברות הכי גדולות בעולם, בשנת 2022 הקמתי את בלו-נינג'ה</p>
+                    <p>המטרה של בלו-נינג'ה היא לתת מענה ושירות מהירים לעסקים מכל הסוגים, אנחנו מרגישים שעסקים בארץ חווים קשיים בהקמה ותפעול אתר לעסק שלהם,
+                        לכן בנינו מערכת דינאמית לאירוח ובנייה של אתר לעסק ,כך שאנחנו יכולים לשדרג, לשנות, לבנות מאפס, בזמן קצר ,ביעילות מירבית, מה שנותן גמישות ואפשרויות בלתי נגמרות לשדרוג ובניית האתר לעסק שלכם.                        
+                    </p>
+                    <p>אנחנו מאמינים בעבודה עם לקוחות קבועים ,אנחנו הכתובת למי שרוצה לגדול עם העסק שלו בתחום הדיגיטלי, להגיע לקהלים רחבים בכל רחבי הארץ ואף בעולם, אנחנו נבנה לך אתר דינאמי ,שניתן לשינוי ,הלקוחות שלנו ,משנים את האתר שלהם
+                        בכל חג או אירוע חשובים , הלקוחות שלהם מרגישים שהאתר הוא מעניין ,משתנה, משתפר, כל הזמן ,ומתחדש.</p>
+                  </div>
+                  <div class="col-md-4 has-text-centered drag-lg-top">
+                    <div class="shadow-down mb-20">
+                      <img src="{% static 'basic_website/img/about-us/about/author.jpg' %}" alt="author"
+                        class="image full-width rounded-lg border-thick is-border-white">
+                    </div>
+                    <img src="{% static 'basic_website/img/about-us/about/signature.png' %}" alt="signature">
+                    <h4>יניב איילון</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /about -->
+            
+            <!-- Work Process -->
+            <section class="section">
+              <div class="container">
+                <div class="has-text-centered">
+                  <h2 class="section-title">תהליך הקמת אתר</h2>
+                </div>
+                <div class="columns">
+                  <div class="column is-4-desktop has-text-centered hover-shadow has-padding-top-15">
+                    <img src="{% static 'basic_website/img/about-us/icons/plan.png' %}" class="mb-20" alt="icon">
+                    <h4 class="mb-20">מחקר ותכנון</h4>
+                    <p>אנחנו בודקים את כל האתרים המתחרים , על מנת לבנות את האתר המוביל בתחום העסק שלך ,ומוודאים שהיתרון הוא גדול וברור.</p>
+                  </div>
+                  <div class="column is-4-desktop has-text-centered hover-shadow has-padding-top-15">
+                    <img src="{% static 'basic_website/img/about-us/icons/design.png' %}" class="mb-20" alt="icon">
+                    <h4 class="mb-20">עיצוב ובנייה</h4>
+                    <p>אנחנו נותנים אינסוף אפשרויות עיצוב, עיצוב עם גרפיקאים, או עיצוב מול דרישות הלקוח,באתר שלנו ניתן להעלות קובץ עד 5 מגהבייט, ניתן לצייר על דף ,לשלוח לנו דרישות ,ותוך 24 שעות 
+                        לראות את האתר שלך באינטרנט , ולהתחיל מיידית לבלוט.</p>
+                  </div>
+                  <div class="column is-4-desktop has-text-centered hover-shadow has-padding-top-15">
+                    <img src="{% static 'basic_website/img/about-us/icons/print.png' %}" class="mb-20" alt="icon">
+                    <h4 class="mb-20">אספקה</h4>
+                    <p>אנחנו מהירים, תוך 24 שעות אנחנו מעלים את האתר לסביבת פיתוח כזו ,שללקוח יכולת לראות את תהליך העבודה ,ןלהיות חלק מהתהליך, אנחנו מארחים את האתר ,שליחת מיילים,
+                         ושירותים נוספים ,נעשיים על ובזכות המערכת שלנו.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ./Work Process -->
+            
+            <!-- team -->
+            <section class="section has-background-cover" data-background="{% static 'basic_website/img/about-us/backgrounds/team-bg.png' %}">
+              <div class="container">
+                <div class="has-text-centered">
+                  <h2 class="section-title">הצוות שלי</h2>
+                </div>
+                <div class="columns is-multiline">
+                  <div class="column is-4-desktop is-6">
+                    <div class="card has-text-centered">
+                      <img src="{% static 'basic_website/img/about-us/team/member-1.png' %}" class="image is-full">
+                      <div class="card-content">
+                        <h4>יונתן בן-גור</h4>
+                        <p class="has-text-light font-secondary">מנהל פרוייקט</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-4-desktop is-6">
+                    <div class="card has-text-centered">
+                      <img src="{% static 'basic_website/img/about-us/team/member-2.png' %}" class="image is-full">
+                      <div class="card-content">
+                        <h4>יוליה צ'רוונסקי</h4>
+                        <p class="has-text-light font-secondary">מעצבת אתר</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-4-desktop is-6">
+                    <div class="card has-text-centered">
+                      <img src="{% static 'basic_website/img/about-us/team/member-3.png' %}" class="image is-full">
+                      <div class="card-content">
+                        <h4>בנימין קסטרמן</h4>
+                        <p class="has-text-light font-secondary">מומחה קידום אתרים</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /team -->
+            
+            <!-- clients -->
+            <section class="section">
+              <div class="container">
+                <div class="has-text-centered">
+                  <h2 class="section-title">הלקוחות שלנו</h2>
+                </div>
+                <div class="client-logo-slider">
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-2.png' %}" alt="client-logo"></a>
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-3.png' %}" alt="client-logo"></a>
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-4.png' %}" alt="client-logo"></a>
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-5.png' %}" alt="client-logo"></a>
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-1.png' %}" alt="client-logo"></a>
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-2.png' %}" alt="client-logo"></a>
+                  <a href="#" class="has-text-centered is-block outline-0 has-padding-20"><img class="d-unset image"
+                      src="{% static 'basic_website/img/about-us/clients-logo/client-logo-3.png' %}" alt="client-logo"></a>
+                </div>
+              </div>
+            </section>
+            <!-- /clients -->
+            
+            <!-- contact -->
+            <section class="section section-on-footer" data-background="{% static 'basic_website/img/about-us/backgrounds/bg-dots.png' %}">
+             <div class="container">
+                <div class="has-text-centered">
+                  <h2 class="section-title">צור קשר</h2>
+                </div>
+                <div class="columns is-centered">
+                  <div class="column is-8-desktop">
+                    <div class="has-background-white card-content has-text-centered shadow-down">
+                      <h4 class="mb-80">טופס יצירת קשר</h4>
+                      {% if message %}
+                      <p>{{ message }}</p>
+                    ` {% endif %}
+                      <form method="post" action="#" class="columns is-multiline is-centered" id="form">
+                        {% csrf_token %}
+                        <div class="column is-6-tablet">
+                          <input type="text" id="name" name="name" placeholder="שם מלא" class="input">
+                        </div>
+                        <div class="column is-6-tablet">
+                          <input type="email" id="email" name="email" placeholder="כתובת מייל" class="input">
+                        </div>
+                        <div class="column is-full">
+                          <textarea name="message" id="message" class="input"
+                            placeholder="נשמח לקבל הודעה מכם כאן"></textarea>
+                        </div>
+                        <div class="columns is-centered column is-6-tablet">
+                            <input type="text" id="phone" name="phone" placeholder="טלפון סלולרי/קווי" class="input">
+                        </div>
+                        <div class="column is-6-tablet is-10">
+                          <button class="button is-primary is-fullwidth">שלח</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /contact -->
+            
+            <!-- footer -->
+            <footer class="has-background-dark footer-section">
+              <div class="section">
+                <div class="container">
+                  <div class="columns">
+                    <div class="column is-4-tablet">
+                      <h5 class="has-text-light">אימייל</h5>
+                      <p class="has-text-white paragraph-lg font-secondary">blu.ninja@gmail.com</p>
+                    </div>
+                    <div class="column is-4-tablet">
+                      <h5 class="has-text-light">טלפון</h5>
+                      <p class="has-text-white paragraph-lg font-secondary">  4155 420 052</p>
+                    </div>
+                    <div class="column is-4-tablet">
+                      <h5 class="has-text-light">כתובת</h5>
+                      <p class="has-text-white paragraph-lg font-secondary">בן גוריון 14 , תל אביב</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <div class="section is-small has-text-centered has-border-top is-border-dark">
+                <p class="has-text-light">Copyright ©
+                    <script>
+                        var CurrentYear = new Date().getFullYear()
+                        document.write(CurrentYear)
+                      </script> a theme by <a href="bluninja.co">bluninja.co</a></p>
+         
+            </div>
+        </footer>
+        <!-- /footer -->
+    
+    <!-- jQuery -->
+    <script src="{% static 'basic_website/plugins/jQuery/jquery.min.js' %}"></script>
+    <!-- slick slider -->
+    <script src="{% static 'basic_website/plugins/slick/slick.min.js' %}"></script>
+    <!-- filter -->
+    <script src="{% static 'basic_website/plugins/shuffle/shuffle.min.js' %}"></script>
+    
+    <!-- Main Script -->
+    <script src="{% static 'basic_website/plugins/js/script.js' %}"></script>
+{%  endblock %}

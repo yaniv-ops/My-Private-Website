@@ -1,15 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+{% block lang %} {%  endblock %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %}</title>
-    {% block css_files %} {%  endblock %}
+    {% block style %} {% endblock %}
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="{% url "index-page" %}" class="navigation__link"><span>01</span>דף הבית</a></li>
+                <li class="navigation__item"><a href="{% url "about-page" %}" class="navigation__link"><span>02</span>קצת עלינו</a></li>
+                <li class="navigation__item"><a href="{% url "sales-page" %}" class="navigation__link"><span>03</span>העבודות שלנו</a></li>
+                <li class="navigation__item"><a href="{% url "reviews-page" %}" class="navigation__link"><span>04</span>ביקורות</a></li>
+                <li class="navigation__item"><a href="{% url "order-page" %}" class="navigation__link"><span>05</span>הזמן אתר ב-24 שעות</a></li>
+            </ul>
+        </nav>
+    </div>
     {% block content %}
 
     {% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="{% static 'basic_website/scripts/index.js' %}" charset="utf-8"></script>  
 </body>
 </html>

@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block lang %} 
+    <html dir="rtl">
+{%  endblock %}
+
+{% block title %}
+    בונים עסקים מצליחים &mdash; BluNinja
+{% endblock %}
+{% block style%} 
+<link href="https://fonts.googlepis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+rel="stylesheet">
+<link rel="stylesheet" href="{% static 'basic_website/styles/style.css' %}">
+<link rel="shortcut icon" type="" href="{% static 'basic_website/img/ninji.jpg'%}">
+{% endblock %}
+{% block content %}
+
+<header class="header">
+    <div class="header__logo-box">
+        <img src="{% static 'basic_website/img/ninji.jpg' %}" alt="logo" class="header__logo">
+        <h3>בלו-נינג'ה</h3>
+    </div><!--end of logo-box-->
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary__main--heb">אנחנו בונים</span>
+            <span class="heading-primary__sub--heb">עסקים דיגיטליים</span>
+        </h1><!--end of haeding-primary-->
+        <a href="#section-tours" class="btn btn--white btn--animated heading-secondary__heb">המערכות שלנו</a>
+    </div><!--end of text-box-->
+</header><!--end of header-->
+<main>
+    <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">אתרים לעסקים ראשונים בתחומם</h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary--heb u-margin-bottom-small">הובל את העסק שלך קדימה</h3>
+                <p class="paragraph">
+                לבנות אתר מוצלח לעסק זו אינה משימה פשוטה, ולרוב גם יקרה, הרבה פעמים גם לא מתקבלת התוצאה שממש רצינו,
+                    ואנחנו נאלצים להסתפק באתר ממוצע, בלו נינג'ה זו חברה מקצועית שדבר ראשון 
+                תוודא מהם בדיוק הצרכים הנוכחיים והעתידיים של העסק שלך,
+                    ומיד נתחיל לעבוד על אתר שיבלוט מעל המתחרים שלך ,הן בעיצוב מדהים ומודרני, והן בפונקציונאליות.</p>
+                <h3 class="heading-tertiary--heb u-margin-bottom-small">המשך להגדיל מוניטין ומכירות</h3>
+                <p class="paragraph">
+                    המטרה לשמה הקמנו את בלו נינג'ה היא לבנות עסקים בתווך האינטרנטי,  אנחנו עושים את זה היטב,  ואנחנו עובדים בצורה חכמה, 
+                    האתרים שאנחנו בונים הם ניתנים לשדרוג והתאמות, התשתיות שלנו הן גוגל, אמאזון , מייקרוסופט, וכלים רבים נוספים, 
+                    כך ניתן לבנות אתר בקנה מידה יחסית קטן שיהיה יפייפה, 
+                    ולצמוח למעבר לכל מה שתיארתם לעצמכם שתוכלו, חנות אינטרנטית בינלאומית, ואף הרבה יותר.
+                </p>
+                <a href="{% url "about-page" %}" class="btn-text--heb">גלה עוד &larr;</a>
+            </div>
+            <div class="col-1-of-2">
+                <div class="composition">
+                    <img src="{% static 'basic_website/img/nat-1.jpg' %}" alt="photo 1" class="composition__photo composition__photo--p1">
+                    <img src="{% static 'basic_website/img/nat-2.jpg' %}" alt="photo 2" class="composition__photo composition__photo--p2">
+                    <img src="{% static 'basic_website/img/youcandoit.jpg' %}" alt="photo 3" class="composition__photo composition__photo--p3">
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="section-features">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-webpage-img-txt"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">עיצובים מרהיבים ומודרניים</h3>
+                    <p class="feature-box__text">
+                        אנחנו מעצבים עיצובים מודרניים, ומשתמשים בטכנלוגיות הכי חדישות בתחום פיתוח אתרים ,כל זאת על מנת שהעסק שלך יתבלט מעל השאר 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-webpage"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">תכנות קוד נקי</h3>
+                    <p class="feature-box__text">
+                        אנחנו לא משתמשים בתוכנות כמו אלמנטור, וורד-פרס, וויקס, וכיו"ב,
+                            היתרונות לתכנות קוד נקי הן גדולות מדי כדי לכתוב כאן, צרו קשר ונשמח להרחיב
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-tablet"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">התאמה לכל המכשירים</h3>
+                    <p class="feature-box__text">
+                        אנו בונים בהתאמה מלאה לכל המכשירים החל מסלולרי הכי קטו , וכלה במסכי ענק. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-alarm"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">אספקה מהירה</h3>
+                    <p class="feature-box__text">
+                        אנחנו נספק לך אתר ברמה גבוהה, במהירות ,תוך 24 שעות יוכל להיות לך אתר שירשים את הלקוחות שלך.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">האתרים המבוקשים ביותר</h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--1">חבילת אתר כסף</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>עמוד אחד</li>
+                                <li>עד 5 רכיבים</li>
+                                <li>עד 5 הנפשות</li>
+                                <li>חודש אירוח חינם</li>
+                                <li>אספקה: 24 שעות</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-value">₪ 1200</p>
+                                <p class="card__price-only">בלבד</p>
+                            </div>
+                            <a href="#popup" class="btn btn--white">הזמן עכשיו!!!</a>
+                        </div>
+                    </div>
+                </div>
+                col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--2">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--2">חבילת אתר מוזהבת</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>3 עמודים</li>
+                                <li>עד 12 רכיבים</li>
+                                <li>עד 12 הנפשות</li>
+                                <li>3 חודשי אירוח חינם</li>
+                                <li>אספקה: 5 ימים</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-value">₪ 2599</p>
+                                <p class="card__price-only">בלבד</p>
+                            </div>
+                            <a href="#popup" class="btn btn--white">הזמן עכשיו!!!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--3">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--3">חבילת אתר יהלום</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>עד 7 עמודים</li>
+                                <li>עד 30 רכיבים</li>
+                                <li>עד 18 הנפשות</li>
+                                <li>6 חודשי אירוח חינם</li>
+                                <li>אספקה: 12 יום</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-3">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-value">₪ 4599</p>
+                                <p class="card__price-only">בלבד</p>
+                            </div>
+                            <a href="#popup" class="btn btn--white">הזמן עכשיו!!!</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="u-center-text u-margin-top-big">
+            <a href="{% url "sales-page" %}" class="btn btn--blue">האתרים הכי פופולאריים</a>
+        </div>
+    </section>
+    <section class="section-stories">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="{% static 'basic_website/img/video-test.mp4'%} " type="video/mp4">
+                Your Browser is not supported update it!
+            </video>
+        </div>
+        <div class="u-center-text">
+            <h2 class="heading-secondary u-margin-bottom-big u-margin-top-big">   אנחנו נעזור לך לקחת את העסק שלך<span class="bigger-word">קדימה</span></h2>
+        </div>
+        <div class="row">
+            <div class="story">
+                <figure class="story__shape">
+                    <img src="{% static 'basic_website/img/woman.jpg'%} " alt="happy business" class="story__img story__img--1">
+                    <figcaption class="story__caption">אבי לוי</figcaption>
+                </figure>
+                <div class="story__text">
+                    <h3 class="headding-tertiary u-margin-bottom-small">מספר הלקוחות שלי בעסק, הוכפל, ואני לא מפסיק לקבל מחמאות על השדרוג לעסק.</h3>
+                    <p>
+                    בלו נינג'ה פשוט מעולים, אני לא מפסיק לקבל פניות מלקוחות שמגיעים דרך האתר, ומספר הלקוחות שלי פשוט הוכפל ...!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="story">
+                <figure class="story__shape">
+                    <img src="{% static 'basic_website/img/man.jpg' %}" alt="happy business" class="story__img story__img--2">
+                    <figcaption class="story__caption">יערה גבינזון</figcaption>
+                </figure>
+                <div class="story__text">
+                    <h3 class="headding-tertiary u-margin-bottom-small">האתר של העסק שלי נראה מדהים!</h3>
+                    <p>
+                        בלו נינג'ה בדקו כל פרט ופרט ,אם הוא מתאים לעסק שלי ,ואם הוא מוצא חן בעיניי עיצובית, התוצאה היא אתר פשוט מושלם....! 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="u-center-text u-margin-top-big">
+            <a href="{% url 'reviews-page' %}" class="btn-text">קרא עוד ביקורות &larr;</a>
+        </div>
+    </section>
+    {%  include 'includes/index-order.html' %}
+</main>
+<footer class="footer">
+    <div class="footer__logo-box">
+        <img src="{% static 'basic_website/img/ninji.jpg'%}" alt="full logo" class="footer__logo">
+    </div>
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="{% url 'about-page' %}" class="footer__link">קצת עלינו</a></li>
+                    <li class="footer__item"><a href="{% url 'contact-page' %}" class="footer__link">צור קשר</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">דרושים</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">אחריות ואבטחה</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">תנאי שימוש</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <p class="footer__copyright">
+                נבנה ע"י <a href="#" class="footer__link">בלו נינג'ה </a> להדגמת עיצוב אתרי רשת. כל הזכויות  &copy; ע"י יניב איילון על בסיס עיצוב של יונאס שמידטמן 
+            </p>
+        </div>
+    </div>
+</footer>
+<div class="popup" id="popup">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="{% static 'basic_website/img/nat-5.jpg' %}" alt="service photo" class="popup__img">
+            <img src="{% static 'basic_website/img/nat-5.jpg' %}" alt="service photo" class="popup__img">               
+        </div>
+
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Start your website</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before ordering website</h3>
+            <p class="popup__text">
+                We would like to talk a little bit on your business, in order to understand your needs, we don't want only to sell you a website design, we love returning clients which are coming back to 
+                upgrade the website , that means we did a good job, you can start with a simple basic page which will be beautifully designed , and gradualy add more features , and more pages, that way
+                you will allways surprise your clients, your cliets will appreciate your innovation, and they will allways be curious and excited regarding your business, pick up the phone and call us at +972(52)4204155
+                or send an e-mail at : yaniv.ayalon@gmail.com. 
+            </p>
+            <a href="{% url "sales-page" %}" class="btn btn--blue">Order now</a>
+        </div>
+    </div>
+</div>
+{%  endblock %}
+
+
+

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block lang %} 
+    <html dir="rtl">
+{%  endblock %}
+
+{% block title %}
+     הזמנת אתר און-ליין&mdash; בלו-נינג'ה
+{% endblock %}
+
+{% block style%} 
+<link href="https://fonts.googlepis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+rel="stylesheet">
+<link rel="stylesheet" href="{% static 'basic_website/styles/about-us.css' %}">
+<link rel="stylesheet" href="{% static 'basic_website/plugins/bulma/bulma.min.css' %}">
+<!-- slick slider -->
+<link rel="stylesheet" href="{% static 'basic_website/plugins/slick/slick.css' %}">
+<!-- themefy-icon -->
+<link rel="stylesheet" href="{% static 'basic_website/plugins/themify-icons/themify-icons.css' %}">
+
+<!-- Main Stylesheet -->
+
+<!--Favicon-->
+<link rel="shortcut icon" href="{% static 'basic_website/img/ninji.jpg'%}" type="image/x-icon">
+<link rel="icon" href="{% static 'basic_website/img/ninji.jpg'%}" type="image/x-icon">
+{% endblock%}
+
+{% block content %}
+<!-- page title -->
+<section class="page-title has-background-primary is-relative">
+    <div class="container">
+      <div class="has-text-centered">
+        <h1 class="has-text-white font-tertiary">השירות בפיתוח ,בדצמבר יעלה לאויר</h1>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="{% static 'basic_website/img/about-us/illustrations/page-title.png' %}" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-pink-round.png' %}" alt="illustrations" class="bg-shape-2">
+    <img src="{% static 'basic_website/img/about-us/illustrations/dots-cyan.png' %}" alt="illustrations" class="bg-shape-3">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-orange.png' %}" alt="illustrations" class="bg-shape-4">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-yellow.png' %}" alt="illustrations" class="bg-shape-5">
+    <img src="{% static 'basic_website/img/about-us/illustrations/dots-group-cyan.png' %}" alt="illustrations" class="bg-shape-6">
+    <img src="{% static 'basic_website/img/about-us/illustrations/leaf-cyan-lg.png' %}" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+{% endblock %}
+  

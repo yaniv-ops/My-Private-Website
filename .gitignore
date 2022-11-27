@@ -3,5 +3,15 @@ virt/
 base_django_project/node_modules/
 base_django_project/package-lock.json
 base_django_project/css/
+.gitignore
+base_django_project/.vscode/
+base_django_project/base_django_project/__pycache__/
+base_django_project/base_django_project/__init__.py
+base_django_project/base_django_project/.env
+base_django_project/base_django_project/
+base_django_project/basic_website/__pycache__/
+base_django_project/basic_website/__init__.py
+base_django_project/sass/
+
 
 

@@ -1,0 +1,56 @@
+
+<section class="section-book">
+    <div class="row">
+        <div class="book">
+            <div class="book__form">
+                <form  method="post" action="#form" class="form" id="form" enctype="multipart/form-data"> 
+                 {% csrf_token %}
+                 {% for err in errors %}
+                    <h1> {{ err }}</h1>
+                 {% endfor %}
+                 {% if message %}
+                    <p>{{ message }}</p>
+                 {% endif %}
+                    <div class="u-margin-bottom-small">
+                    <h2 class="heading-secondary form__header">בחר חבילה</h2>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="שם מלא" name="name" id="name" required>
+                        <label for="name" class="form__label">שם מלא</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="כתובת מייל תקינה" name="email" id="email" required>
+                        <label for="email" class="form__label">כתובת מייל תקינה</label>
+                    </div>
+                    <div class="form__group form__hidden">
+                        <input type="text" class="form__input" placeholder="הכנס מספר טלפון" name="phone" id="phone">
+                        <label for="phone" class="form__label">שם מלא</label>
+                    </div>
+                    <div class="form__group form__hidden">
+                        <input type="file" accept="image/png, image/jpeg" class="form__input" name="file" placeholder="הוסף קובץ לעיצוב אם ברצונך" id="file">
+                        <label for="file" class="form__label">העלאת קובץ עד 5mb </label>
+                    </div>
+                    <div class="form__group u-margin-bottom-medium">
+                        <div class="form__radio-group">
+                            <input type="radio" class="form__radio-input" id="small" name="size">
+                            <label for="small" class="form__radio-label">חבילת אתר כסף
+                                <span class="form__radio-button"></span>
+                            </label>
+                        </div>
+
+                        <div class="form__radio-group">
+                            <input type="radio" class="form__radio-input" id="large" name="size">
+                            <label for="large" class="form__radio-label">חבילת אתר מוזהב
+                                <span class="form__radio-button"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__button">
+                        <button class="btn btn--blue" id="test-button" type="submit" value="submit">לשלב הבא &larr;</button>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
